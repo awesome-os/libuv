@@ -53,7 +53,7 @@ jobs:
             dist/libuv-linux-arm64.so
 
   build-macos-arm64:
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -81,7 +81,8 @@ jobs:
             src/unix/random-getentropy.c \
             -lpthread -o dist/libuv-macos-arm64.dylib
           strip -x dist/libuv-macos-arm64.dylib
-          clang -O2 -std=c11 -Iinclude src/b8g_libuv_smoke.c dist/libuv-macos-arm64.dylib \
+          ln -sf libuv-macos-arm64.dylib dist/libuv.1.dylib
+          clang -O2 -std=gnu11 -Iinclude src/b8g_libuv_smoke.c dist/libuv-macos-arm64.dylib \
             -Wl,-rpath,@executable_path -o dist/b8g_libuv_smoke
           ./dist/b8g_libuv_smoke
       - uses: actions/upload-artifact@v4

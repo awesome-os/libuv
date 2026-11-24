@@ -7,7 +7,7 @@
  */
 
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, statSync } from 'node:fs';
+import { existsSync, mkdirSync, rmSync, statSync, symlinkSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -275,10 +275,14 @@ function runSmokeTest(outDir: string): void {
     const soName = process.platform === 'darwin'
       ? (process.arch === 'arm64' ? 'libuv-macos-arm64.dylib' : 'libuv-macos-x64.dylib')
       : (process.arch === 'arm64' ? 'libuv-linux-arm64.so' : 'libuv-linux-x64.so');
+    const sonameLink = join(outDir, process.platform === 'darwin' ? 'libuv.1.dylib' : 'libuv.so.1');
+    rmSync(sonameLink, { force: true });
+    symlinkSync(soName, sonameLink);
     const args = [
       'cc',
       '-O2',
-      '-std=c11',
+      '-std=gnu11',
+      '-D_GNU_SOURCE',
       `-I${join(ROOT, 'include')}`,
       join(ROOT, 'src', 'b8g_libuv_smoke.c'),
       join(outDir, soName),

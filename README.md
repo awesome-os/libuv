@@ -32,3 +32,13 @@ node scripts/build-zig-cc.mts --target "linux-x64,linux-arm64"
 ## License
 
 MIT — see [`LICENSE`](LICENSE) and [`LICENSE-extra`](LICENSE-extra).
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Download latest release assets (all platforms)
+gh release download -R awesome-os/libuv --dir ./libuv-release
+
+# Or clone source directly (all platforms)
+git clone https://github.com/awesome-os/libuv.git && cd libuv
+```

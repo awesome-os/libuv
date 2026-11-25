@@ -36,9 +36,9 @@ MIT — see [`LICENSE`](LICENSE) and [`LICENSE-extra`](LICENSE-extra).
 ## Quick Install & Run (Windows / Linux / macOS)
 
 ```sh
-# Download latest release assets (all platforms)
-gh release download -R awesome-os/libuv --dir ./libuv-release
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/libuv@main
 
-# Or clone source directly (all platforms)
-git clone https://github.com/awesome-os/libuv.git && cd libuv
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://cpp/libuv?from=repository://github.com/awesome-os/libuv@main"
 ```

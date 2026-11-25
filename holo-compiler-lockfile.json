@@ -1,0 +1,87 @@
+{
+  "schema": "holo-compiler-lockfile-v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "repo": "awesome-os/libuv",
+  "targets": [
+    "linux-arm64",
+    "linux-x64",
+    "macos-arm64",
+    "win64"
+  ],
+  "generatedAt": "2026-11-24T23:53:02.473Z",
+  "dependencies": [
+    {
+      "id": "awesome-os/libuv/libuv-linux-arm64.so",
+      "kind": "lib",
+      "version": "v0.1.0",
+      "target": "linux-arm64",
+      "sha512": "ae81de9dfa1b2c428f2e16fab1b592df25af886cf5df535bd8852055ad4ec25c0682a736ee80ef979a13f0e24aecca6b62e601fb23da18fa7ae67a321ec6a1a8",
+      "size": 188776,
+      "executable": false,
+      "blob": "v11/files/ae/ae81de9dfa1b2c428f2e16fab1b592df25af886cf5df535bd8852055ad4ec25c0682a736ee80ef979a13f0e24aecca6b62e601fb23da18fa7ae67a321ec6a1a8",
+      "url": "https://github.com/awesome-os/libuv/releases/download/v0.1.0/libuv-linux-arm64.so",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/libuv/libuv-linux-x64.so",
+      "kind": "lib",
+      "version": "v0.1.0",
+      "target": "linux-x64",
+      "sha512": "8c3cd6d6a4ccb60ab9c7be5c2873387d4588da0ca714bbe77bf2bdc1bcc7af9ac721346ed1a05a14486eee153d70ce25070c1ff1331791a23b86eea776b8d26f",
+      "size": 196560,
+      "executable": false,
+      "blob": "v11/files/8c/8c3cd6d6a4ccb60ab9c7be5c2873387d4588da0ca714bbe77bf2bdc1bcc7af9ac721346ed1a05a14486eee153d70ce25070c1ff1331791a23b86eea776b8d26f",
+      "url": "https://github.com/awesome-os/libuv/releases/download/v0.1.0/libuv-linux-x64.so",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/libuv/libuv-macos-arm64.dylib",
+      "kind": "lib",
+      "version": "v0.1.0",
+      "target": "macos-arm64",
+      "sha512": "d5b16a90532d970f3f34c96d39d019b7025441f0fc9bdeee3ec1b1a0d357f491576282dd912de3fb17819f0ac75a00ddec145adac2d17d3466486b13f01f78d1",
+      "size": 195448,
+      "executable": false,
+      "blob": "v11/files/d5/d5b16a90532d970f3f34c96d39d019b7025441f0fc9bdeee3ec1b1a0d357f491576282dd912de3fb17819f0ac75a00ddec145adac2d17d3466486b13f01f78d1",
+      "url": "https://github.com/awesome-os/libuv/releases/download/v0.1.0/libuv-macos-arm64.dylib",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/libuv/libuv-windows-x64.dll",
+      "kind": "lib",
+      "version": "v0.1.0",
+      "target": "win64",
+      "sha512": "3a87bd68192a84c547e65c37a4471728d7458215ba3e9a0059c3c7fb8bffd1e9914cc0892669eebe2e85c41df09bff307fdda40cb46168f28c99ea4349cbad51",
+      "size": 224256,
+      "executable": false,
+      "blob": "v11/files/3a/3a87bd68192a84c547e65c37a4471728d7458215ba3e9a0059c3c7fb8bffd1e9914cc0892669eebe2e85c41df09bff307fdda40cb46168f28c99ea4349cbad51",
+      "url": "https://github.com/awesome-os/libuv/releases/download/v0.1.0/libuv-windows-x64.dll",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/libuv/libuv.dll.a",
+      "kind": "lib",
+      "version": "v0.1.0",
+      "target": "any",
+      "sha512": "9018f63df81296c06d045a79ff4915e0f9ce32836b082db3c9b3fe32cf68afee7109eb4f3a90d8307364b080e1b273fe30548e04b9a74d35466c24eed11cc8ee",
+      "size": 65078,
+      "executable": false,
+      "blob": "v11/files/90/9018f63df81296c06d045a79ff4915e0f9ce32836b082db3c9b3fe32cf68afee7109eb4f3a90d8307364b080e1b273fe30548e04b9a74d35466c24eed11cc8ee",
+      "url": "https://github.com/awesome-os/libuv/releases/download/v0.1.0/libuv.dll.a",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/libuv/SHA256SUMS.txt",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "any",
+      "sha512": "1e6547ba28cf29d0aebc53200daea23aad5cd8514e5876f2b8a1c5d9dae5259def988b952ac5994f2785b863b77e10e89d2e4e91d73d5104c2ea1e9d7bea8748",
+      "size": 428,
+      "executable": false,
+      "blob": "v11/files/1e/1e6547ba28cf29d0aebc53200daea23aad5cd8514e5876f2b8a1c5d9dae5259def988b952ac5994f2785b863b77e10e89d2e4e91d73d5104c2ea1e9d7bea8748",
+      "url": "https://github.com/awesome-os/libuv/releases/download/v0.1.0/SHA256SUMS.txt",
+      "dependencies": []
+    }
+  ]
+}
